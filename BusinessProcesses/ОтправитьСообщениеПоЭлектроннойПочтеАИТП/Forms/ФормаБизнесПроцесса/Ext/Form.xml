@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ВедущаяЗадача" id="7">
+			<DataPath>Объект.HeadTask</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВедущаяЗадачаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВедущаяЗадачаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ТипТекстаСообщения" id="10">
+			<DataPath>Объект.ТипТекстаСообщения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТипТекстаСообщенияКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ТипТекстаСообщенияРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Тема" id="13">
+			<DataPath>Объект.Тема</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТемаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ТемаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Тело" id="16">
+			<DataPath>Объект.Тело</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТелоКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ТелоРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="КоличествоПопыток" id="19">
+			<DataPath>Объект.КоличествоПопыток</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КоличествоПопытокКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КоличествоПопытокРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ИнтервалМеждуПопытками" id="22">
+			<DataPath>Объект.ИнтервалМеждуПопытками</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИнтервалМеждуПопыткамиКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ИнтервалМеждуПопыткамиРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<Pages name="Страницы" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<Page name="ГруппаПолучатели" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получатели</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПолучателиРасширеннаяПодсказка" id="28"/>
+					<ChildItems>
+						<Table name="Получатели" id="29">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Получатели</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПолучателиКонтекстноеМеню" id="30"/>
+							<AutoCommandBar name="ПолучателиКоманднаяПанель" id="31"/>
+							<ExtendedTooltip name="ПолучателиРасширеннаяПодсказка" id="32"/>
+							<SearchStringAddition name="ПолучателиСтрокаПоиска" id="33">
+								<AdditionSource>
+									<Item>Получатели</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПолучателиСтрокаПоискаКонтекстноеМеню" id="34"/>
+								<ExtendedTooltip name="ПолучателиСтрокаПоискаРасширеннаяПодсказка" id="35"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПолучателиСостояниеПросмотра" id="36">
+								<AdditionSource>
+									<Item>Получатели</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПолучателиСостояниеПросмотраКонтекстноеМеню" id="37"/>
+								<ExtendedTooltip name="ПолучателиСостояниеПросмотраРасширеннаяПодсказка" id="38"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПолучателиУправлениеПоиском" id="39">
+								<AdditionSource>
+									<Item>Получатели</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПолучателиУправлениеПоискомКонтекстноеМеню" id="40"/>
+								<ExtendedTooltip name="ПолучателиУправлениеПоискомРасширеннаяПодсказка" id="41"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПолучателиНомерСтроки" id="42">
+									<DataPath>Объект.Получатели.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолучателиНомерСтрокиКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="ПолучателиНомерСтрокиРасширеннаяПодсказка" id="44"/>
+								</LabelField>
+								<InputField name="ПолучателиПолучатель" id="45">
+									<DataPath>Объект.Получатели.Получатель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолучателиПолучательКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ПолучателиПолучательРасширеннаяПодсказка" id="47"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПолучателиКопии" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получатели копии</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПолучателиКопииРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<Table name="ПолучателиКопии" id="50">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПолучателиКопии</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПолучателиКопииКонтекстноеМеню" id="51"/>
+							<AutoCommandBar name="ПолучателиКопииКоманднаяПанель" id="52"/>
+							<ExtendedTooltip name="ПолучателиКопииРасширеннаяПодсказка" id="53"/>
+							<SearchStringAddition name="ПолучателиКопииСтрокаПоиска" id="54">
+								<AdditionSource>
+									<Item>ПолучателиКопии</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПолучателиКопииСтрокаПоискаКонтекстноеМеню" id="55"/>
+								<ExtendedTooltip name="ПолучателиКопииСтрокаПоискаРасширеннаяПодсказка" id="56"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПолучателиКопииСостояниеПросмотра" id="57">
+								<AdditionSource>
+									<Item>ПолучателиКопии</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПолучателиКопииСостояниеПросмотраКонтекстноеМеню" id="58"/>
+								<ExtendedTooltip name="ПолучателиКопииСостояниеПросмотраРасширеннаяПодсказка" id="59"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПолучателиКопииУправлениеПоиском" id="60">
+								<AdditionSource>
+									<Item>ПолучателиКопии</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПолучателиКопииУправлениеПоискомКонтекстноеМеню" id="61"/>
+								<ExtendedTooltip name="ПолучателиКопииУправлениеПоискомРасширеннаяПодсказка" id="62"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПолучателиКопииНомерСтроки" id="63">
+									<DataPath>Объект.ПолучателиКопии.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолучателиКопииНомерСтрокиКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ПолучателиКопииНомерСтрокиРасширеннаяПодсказка" id="65"/>
+								</LabelField>
+								<InputField name="ПолучателиКопииПолучатель" id="66">
+									<DataPath>Объект.ПолучателиКопии.Получатель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолучателиКопииПолучательКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ПолучателиКопииПолучательРасширеннаяПодсказка" id="68"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<CheckBoxField name="Стартован" id="69">
+			<DataPath>Объект.Started</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="СтартованКонтекстноеМеню" id="70"/>
+			<ExtendedTooltip name="СтартованРасширеннаяПодсказка" id="71"/>
+		</CheckBoxField>
+		<CheckBoxField name="Завершен" id="72">
+			<DataPath>Объект.Completed</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗавершенКонтекстноеМеню" id="73"/>
+			<ExtendedTooltip name="ЗавершенРасширеннаяПодсказка" id="74"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:BusinessProcessObject.ОтправитьСообщениеПоЭлектроннойПочтеАИТП</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="fb04ff66-e8d9-42d1-a4a7-e2984c1f3fdd">
+		<Name>ГруппаПолучателейПоУмолчанию</Name>
+		<Code>ГруппаПолучателейПоУмолчанию</Code>
+		<Description>Группа получателей по умолчанию</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

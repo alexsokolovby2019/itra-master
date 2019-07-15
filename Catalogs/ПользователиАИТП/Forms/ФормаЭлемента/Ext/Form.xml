@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПользовательИБ" id="98">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь ИБ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользователь ИБ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаПользовательИБРасширеннаяПодсказка" id="99"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="138">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="139"/>
+					<ChildItems>
+						<InputField name="ПользовательИБИмя" id="100">
+							<DataPath>ПользовательИБИмя</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ПользовательИБИмяКонтекстноеМеню" id="101"/>
+							<ExtendedTooltip name="ПользовательИБИмяРасширеннаяПодсказка" id="102"/>
+						</InputField>
+						<Button name="ВыбратьПользователяИБ" id="140">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.ВыбратьПользователяИБ</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.User</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ВыбратьПользователяИБРасширеннаяПодсказка" id="141"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ПользовательИБПолноеИмя" id="103">
+					<DataPath>ПользовательИБПолноеИмя</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПользовательИБПолноеИмяКонтекстноеМеню" id="104"/>
+					<ExtendedTooltip name="ПользовательИБПолноеИмяРасширеннаяПодсказка" id="105"/>
+				</InputField>
+				<InputField name="ПользовательИБПользовательОС" id="106">
+					<DataPath>ПользовательИБПользовательОС</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПользовательИБПользовательОСКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="ПользовательИБПользовательОСРасширеннаяПодсказка" id="108"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="СвойстваГруппа" id="136">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойства</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойства группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="СвойстваГруппаРасширеннаяПодсказка" id="137"/>
+			<ChildItems>
+				<InputField name="Наименование" id="95">
+					<DataPath>Объект.Description</DataPath>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="97"/>
+				</InputField>
+				<InputField name="ОсновнойКонтакт" id="148">
+					<DataPath>Объект.ОсновнойКонтакт</DataPath>
+					<ContextMenu name="ОсновнойКонтактКонтекстноеМеню" id="149"/>
+					<ExtendedTooltip name="ОсновнойКонтактРасширеннаяПодсказка" id="150"/>
+				</InputField>
+				<Pages name="Страницы" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<Page name="СистемныеРолиСтраница" id="81">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Системные роли</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Системные роли страница</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="СистемныеРолиСтраницаРасширеннаяПодсказка" id="82"/>
+							<ChildItems>
+								<Table name="СистемныеРоли" id="60">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>СистемныеРоли</DataPath>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СистемныеРолиКонтекстноеМеню" id="61"/>
+									<AutoCommandBar name="СистемныеРолиКоманднаяПанель" id="62"/>
+									<ExtendedTooltip name="СистемныеРолиРасширеннаяПодсказка" id="63"/>
+									<SearchStringAddition name="СистемныеРолиСтрокаПоиска" id="64">
+										<AdditionSource>
+											<Item>СистемныеРоли</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СистемныеРолиСтрокаПоискаКонтекстноеМеню" id="65"/>
+										<ExtendedTooltip name="СистемныеРолиСтрокаПоискаРасширеннаяПодсказка" id="66"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СистемныеРолиСостояниеПросмотра" id="67">
+										<AdditionSource>
+											<Item>СистемныеРоли</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СистемныеРолиСостояниеПросмотраКонтекстноеМеню" id="68"/>
+										<ExtendedTooltip name="СистемныеРолиСостояниеПросмотраРасширеннаяПодсказка" id="69"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СистемныеРолиУправлениеПоиском" id="70">
+										<AdditionSource>
+											<Item>СистемныеРоли</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СистемныеРолиУправлениеПоискомКонтекстноеМеню" id="71"/>
+										<ExtendedTooltip name="СистемныеРолиУправлениеПоискомРасширеннаяПодсказка" id="72"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<CheckBoxField name="СистемныеРолиПометка" id="73">
+											<DataPath>СистемныеРоли.Пометка</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СистемныеРолиПометкаКонтекстноеМеню" id="74"/>
+											<ExtendedTooltip name="СистемныеРолиПометкаРасширеннаяПодсказка" id="75"/>
+										</CheckBoxField>
+										<InputField name="СистемныеРолиСиноним" id="76">
+											<DataPath>СистемныеРоли.Синоним</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СистемныеРолиСинонимКонтекстноеМеню" id="77"/>
+											<ExtendedTooltip name="СистемныеРолиСинонимРасширеннаяПодсказка" id="78"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ПользовательскиеРолиСтраница" id="109">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Прикладные роли</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользовательские роли страница</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПользовательскиеРолиСтраницаРасширеннаяПодсказка" id="110"/>
+							<ChildItems>
+								<Table name="ПрикладныеРоли" id="117">
+									<Representation>List</Representation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>ПрикладныеРоли</DataPath>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ПрикладныеРолиКонтекстноеМеню" id="118"/>
+									<AutoCommandBar name="ПрикладныеРолиКоманднаяПанель" id="119"/>
+									<ExtendedTooltip name="ПрикладныеРолиРасширеннаяПодсказка" id="120"/>
+									<SearchStringAddition name="ПрикладныеРолиСтрокаПоиска" id="121">
+										<AdditionSource>
+											<Item>ПрикладныеРоли</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПрикладныеРолиСтрокаПоискаКонтекстноеМеню" id="122"/>
+										<ExtendedTooltip name="ПрикладныеРолиСтрокаПоискаРасширеннаяПодсказка" id="123"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПрикладныеРолиСостояниеПросмотра" id="124">
+										<AdditionSource>
+											<Item>ПрикладныеРоли</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПрикладныеРолиСостояниеПросмотраКонтекстноеМеню" id="125"/>
+										<ExtendedTooltip name="ПрикладныеРолиСостояниеПросмотраРасширеннаяПодсказка" id="126"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПрикладныеРолиУправлениеПоиском" id="127">
+										<AdditionSource>
+											<Item>ПрикладныеРоли</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПрикладныеРолиУправлениеПоискомКонтекстноеМеню" id="128"/>
+										<ExtendedTooltip name="ПрикладныеРолиУправлениеПоискомРасширеннаяПодсказка" id="129"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<CheckBoxField name="ПользовательскиеРолиПометка" id="142">
+											<DataPath>ПрикладныеРоли.Пометка</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПользовательскиеРолиПометкаКонтекстноеМеню" id="143"/>
+											<ExtendedTooltip name="ПользовательскиеРолиПометкаРасширеннаяПодсказка" id="144"/>
+										</CheckBoxField>
+										<InputField name="ПользовательскиеРолиСиноним" id="145">
+											<DataPath>ПрикладныеРоли.Синоним</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПользовательскиеРолиСинонимКонтекстноеМеню" id="146"/>
+											<ExtendedTooltip name="ПользовательскиеРолиСинонимРасширеннаяПодсказка" id="147"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаКомментарий" id="83">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Комментарий</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СтраницаКомментарийРасширеннаяПодсказка" id="84"/>
+							<ChildItems>
+								<InputField name="Комментарий" id="85">
+									<DataPath>Объект.Комментарий</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Height>2</Height>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="КомментарийКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="87"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ПользователиАИТП</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПользовательИБИмя" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя (для входа)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПользовательИБПолноеИмя" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полное имя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПользовательИБПользовательОС" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь ОС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПользовательИБАутентификацияОС" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аутентификация операционной системы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПользовательИБАутентификацияСтандартная" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аутентификация 1С:Предприятия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПользовательИБРежимЗапуска" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим запуска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПользовательИБЯзык" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Язык интерфейса
+программы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СистемныеРоли" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Системные роли</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Пометка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Синоним" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разрешенное действие (роль)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Имя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерКартинки" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПрикладныеРоли" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прикладные роли</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Пометка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Синоним" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разрешенное действие (роль)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Имя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерКартинки" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыбратьПользователяИБ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать пользователя ИБ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать пользователя ИБ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьПользователяИБ</Action>
+		</Command>
+	</Commands>
+</Form>

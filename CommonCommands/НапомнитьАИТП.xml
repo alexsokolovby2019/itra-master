@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<CommonCommand uuid="f50ca1f4-54c7-496e-b337-17e38c0b1ae8">
+		<Properties>
+			<Name>НапомнитьАИТП</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Напомнить...</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Group>CommandGroup.ОрганайзерАИТП</Group>
+			<Representation>Auto</Representation>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить напоминание по выбранному предмету</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.НапоминаниеАИТП</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Shortcut/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<CommandParameterType>
+				<v8:Type>cfg:DocumentRef.ВыполнитьДействияПослеОбновленияАИТП</v8:Type>
+				<v8:Type>cfg:CatalogRef.УчетныеДанныеАИТП</v8:Type>
+				<v8:Type>cfg:BusinessProcessRoutePointRef.СоздатьПользователяИнформационнойБазыАИТП</v8:Type>
+				<v8:Type>cfg:CatalogRef.НастройкиHTTPСоединенийАИТП</v8:Type>
+				<v8:Type>cfg:BusinessProcessRoutePointRef.ИзменитьПользователяАИТП</v8:Type>
+				<v8:Type>cfg:CatalogRef.СервисыOneScriptАИТП</v8:Type>
+				<v8:Type>cfg:CatalogRef.НастройкиHTTPСервисовАИТП</v8:Type>
+				<v8:Type>cfg:BusinessProcessRoutePointRef.СоздатьПользователяАИТП</v8:Type>
+				<v8:Type>cfg:BusinessProcessRoutePointRef.ОбработатьОшибкуУдаленияРезультатовЗаданийСервисаOneScriptАИТП</v8:Type>
+				<v8:Type>cfg:CatalogRef.УзлыОбменаДаннымиАИТП</v8:Type>
+				<v8:Type>cfg:TaskRef.ЗадачаАИТП</v8:Type>
+				<v8:Type>cfg:CatalogRef.НаборыСетевыхХостовАИТП</v8:Type>
+				<v8:Type>cfg:CatalogRef.НастройкиSMTPСервераАИТП</v8:Type>
+				<v8:Type>cfg:CatalogRef.КонтактыАИТП</v8:Type>
+				<v8:Type>cfg:BusinessProcessRoutePointRef.ПодготовитьСистемуКОбновлениюАИТП</v8:Type>
+				<v8:Type>cfg:BusinessProcessRoutePointRef.ОтправитьHTTPЗапросАИТП</v8:Type>
+				<v8:Type>cfg:CatalogRef.ПользователиАИТП</v8:Type>
+				<v8:Type>cfg:BusinessProcessRoutePointRef.ВыполнитьДействияПослеОбновленияАИТП</v8:Type>
+				<v8:Type>cfg:CatalogRef.ПараметрыСоединенийСУБД</v8:Type>
+				<v8:Type>cfg:DocumentRef.ОшибкиВыполненияАИТП</v8:Type>
+				<v8:Type>cfg:BusinessProcessRoutePointRef.СоздатьПользователяПодсистемыАИТП</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПодготовитьСистемуКОбновлениюАИТП</v8:Type>
+				<v8:Type>cfg:CatalogRef.ЗаметкиАИТП</v8:Type>
+				<v8:Type>cfg:BusinessProcessRoutePointRef.ОтправитьСообщениеПоЭлектроннойПочтеАИТП</v8:Type>
+				<v8:Type>cfg:CatalogRef.ГруппыАдресацииЗадачАИТП</v8:Type>
+				<v8:Type>cfg:BusinessProcessRoutePointRef.УдалитьПользователяИнформационнойБазыАИТП</v8:Type>
+				<v8:Type>cfg:BusinessProcessRoutePointRef.ИзменитьПользователяИнформационнойБазыАИТП</v8:Type>
+				<v8:Type>cfg:CatalogRef.ГруппыКонтактовАИТП</v8:Type>
+				<v8:Type>cfg:CatalogRef.СетевыеХостыАИТП</v8:Type>
+				<v8:Type>cfg:BusinessProcessRoutePointRef.МонторингНедоступногоСервисаOneScriptАИТП</v8:Type>
+				<v8:Type>cfg:CatalogRef.ЗапросыСУБД</v8:Type>
+			</CommandParameterType>
+			<ParameterUseMode>Single</ParameterUseMode>
+			<ModifiesData>false</ModifiesData>
+		</Properties>
+	</CommonCommand>
+</MetaDataObject>

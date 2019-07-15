@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВыполнитьЗапрос" id="54">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыполнитьЗапрос</CommandName>
+				<ExtendedTooltip name="ФормаВыполнитьЗапросРасширеннаяПодсказка" id="55"/>
+			</Button>
+			<Button name="ФормаСформироватьКодСОбработками" id="81">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СформироватьКодСОбработками</CommandName>
+				<ExtendedTooltip name="ФормаСформироватьКодСОбработкамиРасширеннаяПодсказка" id="82"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОбщие" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа общие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа общие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОбщиеРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Родитель" id="7">
+					<DataPath>Объект.Parent</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="9"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПараметрыСоединения" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметры соединения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметры соединения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПараметрыСоединенияРасширеннаяПодсказка" id="47"/>
+			<ChildItems>
+				<InputField name="ПараметрыСоединения" id="10">
+					<DataPath>Объект.ПараметрыСоединения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПараметрыСоединенияКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ПараметрыСоединенияРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<Button name="ТестСоединения" id="48">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ТестСоединения</CommandName>
+					<ExtendedTooltip name="ТестСоединенияРасширеннаяПодсказка" id="49"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="52">
+			<Height>30</Height>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="53"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="68">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="69"/>
+					<ChildItems>
+						<InputField name="ТипЗапроса" id="62">
+							<DataPath>Объект.ТипЗапроса</DataPath>
+							<ContextMenu name="ТипЗапросаКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="ТипЗапросаРасширеннаяПодсказка" id="64"/>
+						</InputField>
+						<CheckBoxField name="ПараметрыСоединенияКакЗначения" id="70">
+							<DataPath>ПараметрыСоединенияКакЗначения</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПараметрыСоединенияКакЗначенияКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="ПараметрыСоединенияКакЗначенияРасширеннаяПодсказка" id="72"/>
+						</CheckBoxField>
+						<UsualGroup name="Группа3" id="76">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="77"/>
+							<ChildItems>
+								<CheckBoxField name="УстановитьТаймаут" id="78">
+									<DataPath>Объект.УстановитьТаймаут</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таймаут</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="УстановитьТаймаутКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="УстановитьТаймаутРасширеннаяПодсказка" id="80"/>
+									<Events>
+										<Event name="OnChange">УстановитьТаймаутПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="Таймаут" id="73">
+									<DataPath>Объект.Таймаут</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ТаймаутКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="ТаймаутРасширеннаяПодсказка" id="75"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="ПараметрыЗапроса" id="16">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ПараметрыЗапроса</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ПараметрыЗапросаКонтекстноеМеню" id="17"/>
+					<AutoCommandBar name="ПараметрыЗапросаКоманднаяПанель" id="18"/>
+					<ExtendedTooltip name="ПараметрыЗапросаРасширеннаяПодсказка" id="19"/>
+					<SearchStringAddition name="ПараметрыЗапросаСтрокаПоиска" id="20">
+						<AdditionSource>
+							<Item>ПараметрыЗапроса</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПараметрыЗапросаСтрокаПоискаКонтекстноеМеню" id="21"/>
+						<ExtendedTooltip name="ПараметрыЗапросаСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПараметрыЗапросаСостояниеПросмотра" id="23">
+						<AdditionSource>
+							<Item>ПараметрыЗапроса</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПараметрыЗапросаСостояниеПросмотраКонтекстноеМеню" id="24"/>
+						<ExtendedTooltip name="ПараметрыЗапросаСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПараметрыЗапросаУправлениеПоиском" id="26">
+						<AdditionSource>
+							<Item>ПараметрыЗапроса</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПараметрыЗапросаУправлениеПоискомКонтекстноеМеню" id="27"/>
+						<ExtendedTooltip name="ПараметрыЗапросаУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ПараметрыЗапросаИмя" id="32">
+							<DataPath>Объект.ПараметрыЗапроса.Имя</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>20</Width>
+							<ContextMenu name="ПараметрыЗапросаИмяКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ПараметрыЗапросаИмяРасширеннаяПодсказка" id="34"/>
+						</InputField>
+						<InputField name="ПараметрыЗапросаИмяПараметра" id="35">
+							<DataPath>Объект.ПараметрыЗапроса.ИмяПараметра</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>20</Width>
+							<ContextMenu name="ПараметрыЗапросаИмяПараметраКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ПараметрыЗапросаИмяПараметраРасширеннаяПодсказка" id="37"/>
+						</InputField>
+						<InputField name="ПараметрыЗапросаЗначение" id="38">
+							<DataPath>Объект.ПараметрыЗапроса.Значение</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ПараметрыЗапросаЗначениеКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ПараметрыЗапросаЗначениеРасширеннаяПодсказка" id="40"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<TextDocumentField name="ТекстЗапроса" id="13">
+					<DataPath>Объект.ТекстЗапроса</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТекстЗапросаКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ТекстЗапросаРасширеннаяПодсказка" id="15"/>
+				</TextDocumentField>
+				<SpreadSheetDocumentField name="РезультатыЗапроса" id="43">
+					<DataPath>РезультатыЗапроса</DataPath>
+					<ShowHeaders>true</ShowHeaders>
+					<ContextMenu name="РезультатыЗапросаКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="РезультатыЗапросаРасширеннаяПодсказка" id="45"/>
+				</SpreadSheetDocumentField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ЗапросыСУБД</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РезультатыЗапроса" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результаты запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыСоединенияКакЗначения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры соединения как значения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ТестСоединения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест соединения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест соединения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТестСоединения</Action>
+		</Command>
+		<Command name="ВыполнитьЗапрос" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить запрос</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить запрос</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьЗапрос</Action>
+		</Command>
+		<Command name="СформироватьКодСОбработками" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать код с обработками</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьКодСОбработками</Action>
+		</Command>
+		<Command name="СформироватьКодКлассическийСтиль" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Классический стиль</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать код классический стиль</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьКодКлассическийСтиль</Action>
+		</Command>
+	</Commands>
+</Form>

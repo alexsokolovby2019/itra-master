@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Subsystem uuid="0b47b6d6-5242-461a-8a69-1fd90a3e2187">
+		<Properties>
+			<Name>БиблиотекаРаботаСУБД</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа с СУБД</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СоединениеСУБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗапросСУБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РезультатыЗапросаСУБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.РаботаСУБДCOMОбъект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПараметрыСоединенийСУБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПараметрыСоединенияСУБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗапросыСУБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТипыСУБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыЗапросовСУБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыСУБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">5fd94725-7bcd-4f73-9219-da89bdda2e99</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">97ac4487-18ad-4b5b-9404-b473ac5cedd2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">1e720fc7-ccc6-417c-90a9-bc7dea3cf60e</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">f1a52fe8-498a-4bcf-9074-4c9164b04019</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">32afeb7b-87be-412b-83aa-ee245b851f07</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

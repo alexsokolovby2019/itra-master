@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Subsystem uuid="8532c1f2-6f11-4201-abba-6130d45d2ad7">
+		<Properties>
+			<Name>ЗаметкиИНапоминанияАИТП</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заметки и напоминания</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыУстановкиВремениНапоминанияАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НапоминанияПользователяКлиентАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НапоминанияПользователяГлобальныйАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИнтервалПроверкиНапоминанийАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НапоминанияПользователяСлужебныйАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НапоминанияПользователяКлиентПовтИспАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НапоминанияПользователяВызовСервераАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НапоминанияПользователяАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НапоминанияПользователяКлиентСерверАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьАвтоматическиеНапоминанияПользователяАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ОрганайзерАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НапомнитьАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НапоминаниеАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОрганайзерАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ЦветаЗаметокАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗаметкиАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗаметкаАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СоздатьЗаметкуПоПредметуАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьЗаметкиПоПредметуАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьЗаметкиПоПредметуАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкиЗаметкиИНапоминанияАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.МоиЗаметкиПоПредметуАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияКлиентАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияКлиентСерверАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьНапоминанияПользователяАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.НастройкаИспользованияЗаметокИНапоминанийАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ИспользованиеНапоминанийАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ИспользованиеЗаметокАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ИспользованиеЗаметокИНапоминанийАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияЗаметкиАИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОрганайзерЧБ_АИТП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияНапоминанияАИТП</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

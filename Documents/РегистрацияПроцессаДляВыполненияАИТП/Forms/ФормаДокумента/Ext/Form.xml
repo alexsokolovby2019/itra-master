@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="БизнесПроцесс" id="7">
+			<DataPath>Объект.БизнесПроцесс</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="БизнесПроцессКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="БизнесПроцессРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Pages name="Страницы" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<Page name="ГруппаЗависитОт" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зависит от</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаЗависитОтРасширеннаяПодсказка" id="13"/>
+					<ChildItems>
+						<Table name="ЗависитОт" id="14">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ЗависитОт</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЗависитОтКонтекстноеМеню" id="15"/>
+							<AutoCommandBar name="ЗависитОтКоманднаяПанель" id="16"/>
+							<ExtendedTooltip name="ЗависитОтРасширеннаяПодсказка" id="17"/>
+							<SearchStringAddition name="ЗависитОтСтрокаПоиска" id="18">
+								<AdditionSource>
+									<Item>ЗависитОт</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗависитОтСтрокаПоискаКонтекстноеМеню" id="21"/>
+								<ExtendedTooltip name="ЗависитОтСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗависитОтСостояниеПросмотра" id="23">
+								<AdditionSource>
+									<Item>ЗависитОт</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗависитОтСостояниеПросмотраКонтекстноеМеню" id="26"/>
+								<ExtendedTooltip name="ЗависитОтСостояниеПросмотраРасширеннаяПодсказка" id="27"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗависитОтУправлениеПоиском" id="28">
+								<AdditionSource>
+									<Item>ЗависитОт</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗависитОтУправлениеПоискомКонтекстноеМеню" id="31"/>
+								<ExtendedTooltip name="ЗависитОтУправлениеПоискомРасширеннаяПодсказка" id="32"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ЗависитОтНомерСтроки" id="33">
+									<DataPath>Объект.ЗависитОт.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗависитОтНомерСтрокиКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="ЗависитОтНомерСтрокиРасширеннаяПодсказка" id="35"/>
+								</LabelField>
+								<InputField name="ЗависитОтИмя" id="36">
+									<DataPath>Объект.ЗависитОт.Имя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗависитОтИмяКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ЗависитОтИмяРасширеннаяПодсказка" id="38"/>
+								</InputField>
+								<InputField name="ЗависитОтЗначение" id="39">
+									<DataPath>Объект.ЗависитОт.Значение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗависитОтЗначениеКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ЗависитОтЗначениеРасширеннаяПодсказка" id="41"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаВлияетНа" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Влияет на</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаВлияетНаРасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<Table name="ВлияетНа" id="44">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ВлияетНа</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ВлияетНаКонтекстноеМеню" id="45"/>
+							<AutoCommandBar name="ВлияетНаКоманднаяПанель" id="46"/>
+							<ExtendedTooltip name="ВлияетНаРасширеннаяПодсказка" id="47"/>
+							<SearchStringAddition name="ВлияетНаСтрокаПоиска" id="48">
+								<AdditionSource>
+									<Item>ВлияетНа</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВлияетНаСтрокаПоискаКонтекстноеМеню" id="51"/>
+								<ExtendedTooltip name="ВлияетНаСтрокаПоискаРасширеннаяПодсказка" id="52"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВлияетНаСостояниеПросмотра" id="53">
+								<AdditionSource>
+									<Item>ВлияетНа</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВлияетНаСостояниеПросмотраКонтекстноеМеню" id="56"/>
+								<ExtendedTooltip name="ВлияетНаСостояниеПросмотраРасширеннаяПодсказка" id="57"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВлияетНаУправлениеПоиском" id="58">
+								<AdditionSource>
+									<Item>ВлияетНа</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВлияетНаУправлениеПоискомКонтекстноеМеню" id="61"/>
+								<ExtendedTooltip name="ВлияетНаУправлениеПоискомРасширеннаяПодсказка" id="62"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ВлияетНаНомерСтроки" id="63">
+									<DataPath>Объект.ВлияетНа.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВлияетНаНомерСтрокиКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ВлияетНаНомерСтрокиРасширеннаяПодсказка" id="65"/>
+								</LabelField>
+								<InputField name="ВлияетНаИмя" id="66">
+									<DataPath>Объект.ВлияетНа.Имя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВлияетНаИмяКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ВлияетНаИмяРасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<InputField name="ВлияетНаЗначение" id="69">
+									<DataPath>Объект.ВлияетНа.Значение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВлияетНаЗначениеКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ВлияетНаЗначениеРасширеннаяПодсказка" id="71"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.РегистрацияПроцессаДляВыполненияАИТП</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

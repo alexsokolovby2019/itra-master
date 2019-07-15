@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Enum uuid="8ea5dcd0-6595-4751-877b-3b0c5f88c5c3">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.МоментыСозданияОповещенияАИТП" category="Ref">
+				<xr:TypeId>30b7dfae-3de9-48e7-a27b-a8d94d799a8e</xr:TypeId>
+				<xr:ValueId>c9b325b6-0827-4b0f-a8b1-bf52ea5b0dc7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.МоментыСозданияОповещенияАИТП" category="Manager">
+				<xr:TypeId>2147ad6e-85cc-40f9-84d4-b76a14707724</xr:TypeId>
+				<xr:ValueId>44752864-4bf5-4e04-b53e-e3a306e70967</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.МоментыСозданияОповещенияАИТП" category="List">
+				<xr:TypeId>4ac706c4-402b-47c4-bf10-3a533a12cf1e</xr:TypeId>
+				<xr:ValueId>bb90c3fe-1047-4190-83fe-34d600e4c180</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>МоментыСозданияОповещенияАИТП</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Моменты создания оповещения АИТП</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="4bdbbd1b-10d3-4787-8b77-ee2268cb88e7">
+				<Properties>
+					<Name>ПередСтартомПроцесса</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перед стартом процесса</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="705e9a36-9442-45c3-ae9a-64d3fa65f3d0">
+				<Properties>
+					<Name>ПриЗавершенииПроцесса</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При завершении процесса</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0fcdb58a-6725-4511-bed6-7ebe7bb9f4e9">
+				<Properties>
+					<Name>ПриСозданииЗадачи</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При создании задачи</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="13ec2606-2844-4ec6-a893-81cb595f41b6">
+				<Properties>
+					<Name>ПриВыполненииЗадачи</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При выполнении задачи</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="26ee37cd-6d7f-43aa-8a28-409d2ca3c51b">
+				<Properties>
+					<Name>ПередВыполнениемДействия</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перед выполнением действия</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="88ba261b-4a2f-482a-b74c-b35fbb8f58d9">
+				<Properties>
+					<Name>ПриВыполненииДействия</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При выполнении действия</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="52c66130-d839-48f5-a245-85d182c98944">
+				<Properties>
+					<Name>ПослеВыполненияДействия</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>После выполнения действия</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1b7b0bf2-3c44-4a8c-94b1-ea4f0e8ba551">
+				<Properties>
+					<Name>СистемноеИсключение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Системное исключение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

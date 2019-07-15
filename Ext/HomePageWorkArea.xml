@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<HomePageWorkArea xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WorkingAreaTemplate>TwoColumnsVariableWidth</WorkingAreaTemplate>
+	<LeftColumn>
+		<Item>
+			<Form>Task.ЗадачаАИТП.Form.МоиЗадачи</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="bef10a4f-77f0-4fc5-8fea-e3d64e65731d">false</xr:Value>
+			</Visibility>
+		</Item>
+	</LeftColumn>
+	<RightColumn>
+		<Item>
+			<Form>InformationRegister.НапоминанияПользователяАИТП.Form.МоиНапоминания</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="bef10a4f-77f0-4fc5-8fea-e3d64e65731d">false</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>Catalog.ЗаметкиАИТП.Form.МоиЗаметки</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Item>
+	</RightColumn>
+</HomePageWorkArea>

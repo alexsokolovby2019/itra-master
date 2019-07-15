@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<DataProcessor uuid="b11a3e71-0f9d-4177-9dd0-6f47f235ea0c">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КлиентSSHСлужебная" category="Object">
+				<xr:TypeId>bd87c2f6-4821-474e-9044-e96c359c13e6</xr:TypeId>
+				<xr:ValueId>eabb77b1-0803-450e-a98e-44a6b3b89d99</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КлиентSSHСлужебная" category="Manager">
+				<xr:TypeId>9ba60486-8de4-4509-aed2-1cda5461da2d</xr:TypeId>
+				<xr:ValueId>aa34b3c5-b2bf-4f65-b061-a7599edb4b26</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КлиентSSHСлужебная</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент SSHСлужебная</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Реализует функции класса КлиентSSH</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реализует функции класса КлиентSSH</v8:content>
+				</v8:item>
+			</ExtendedPresentation>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не используется самостоятельно.
+Реализует функции класса КлиентSSH.</v8:content>
+				</v8:item>
+			</Explanation>
+		</Properties>
+		<ChildObjects/>
+	</DataProcessor>
+</MetaDataObject>

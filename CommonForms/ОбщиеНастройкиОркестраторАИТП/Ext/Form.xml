@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаОбщиеНастройки" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общие настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа общие настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаОбщиеНастройкиРасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<CheckBoxField name="РазрешитьЗапускПроцессовАИТП" id="4">
+					<DataPath>НаборКонстант.РазрешитьЗапускПроцессовАИТП</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РазрешитьЗапускПроцессовАИТПКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="РазрешитьЗапускПроцессовАИТПРасширеннаяПодсказка" id="6"/>
+				</CheckBoxField>
+				<CheckBoxField name="РазрешитьУдалениеСтарыхПроцессовАИТП" id="34">
+					<DataPath>НаборКонстант.РазрешитьУдалениеСтарыхПроцессовАИТП</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РазрешитьУдалениеСтарыхПроцессовАИТПКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="РазрешитьУдалениеСтарыхПроцессовАИТПРасширеннаяПодсказка" id="36"/>
+				</CheckBoxField>
+				<InputField name="ИнтервалХраненияПроцессовАИТП" id="1">
+					<DataPath>НаборКонстант.ИнтервалХраненияПроцессовАИТП</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИнтервалХраненияПроцессовАИТПКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ИнтервалХраненияПроцессовАИТПРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="UrlWebПубликацииАИТП" id="16">
+					<DataPath>НаборКонстант.UrlWebПубликацииАИТП</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="UrlWebПубликацииАИТПКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="UrlWebПубликацииАИТПРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЭлектроннаяПочта" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Электронная почта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа электронная почта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаЭлектроннаяПочтаРасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<InputField name="СерверЭлектроннойПочтыАИТП" id="7">
+					<DataPath>НаборКонстант.СерверЭлектроннойПочтыАИТП</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СерверЭлектроннойПочтыАИТПКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="СерверЭлектроннойПочтыАИТПРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="СистемныйПолучательЭлектроннойПочтыАИТП" id="10">
+					<DataPath>НаборКонстант.СистемныйПолучательЭлектроннойПочтыАИТП</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СистемныйПолучательЭлектроннойПочтыАИТПКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СистемныйПолучательЭлектроннойПочтыАИТПРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="ТипТекстаСообщенийЭлектроннойПочтыАИТП" id="13">
+					<DataPath>НаборКонстант.ТипТекстаСообщенийЭлектроннойПочтыАИТП</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТипТекстаСообщенийЭлектроннойПочтыАИТПКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ТипТекстаСообщенийЭлектроннойПочтыАИТПРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>НаборКонстант.ТипТекстаСообщенийЭлектроннойПочтыАИТП.Ref</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

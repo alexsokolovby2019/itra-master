@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ФермаOneScriptПоУмолчаниюАИТП" id="22">
+			<DataPath>НаборКонстант.ФермаOneScriptПоУмолчаниюАИТП</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ферма по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ФермаOneScriptПоУмолчаниюАИТПКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ФермаOneScriptПоУмолчаниюАИТПРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<CheckBoxField name="РазрешитьПроверкуДоступностиСервисовOneScriptАИТП" id="49">
+			<DataPath>НаборКонстант.РазрешитьПроверкуДоступностиСервисовOneScriptАИТП</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить проверку доступности сервисов</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="РазрешитьПроверкуДоступностиСервисовOneScriptАИТПКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="РазрешитьПроверкуДоступностиСервисовOneScriptАИТПРасширеннаяПодсказка" id="51"/>
+		</CheckBoxField>
+		<CheckBoxField name="РазрешитьУдалениеРезультатовАсинхронныхЗаданийOneScriptАИТП" id="52">
+			<DataPath>НаборКонстант.РазрешитьУдалениеРезультатовАсинхронныхЗаданийOneScriptАИТП</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить удаление результатов асинхронных заданий</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="РазрешитьУдалениеРезультатовАсинхронныхЗаданийOneScriptАИТПКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="РазрешитьУдалениеРезультатовАсинхронныхЗаданийOneScriptАИТПРасширеннаяПодсказка" id="54"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>НаборКонстант.ТипТекстаСообщенийЭлектроннойПочтыАИТП.Ref</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

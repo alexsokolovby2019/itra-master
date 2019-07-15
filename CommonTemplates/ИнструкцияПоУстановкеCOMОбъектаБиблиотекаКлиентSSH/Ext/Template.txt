@@ -1,0 +1,14 @@
+﻿1. Сохранить вложение макета COMОбъектБиблиотекаКлиентSSH_БинарныеФайлы на диск как zip-файл
+2. Разархивировать архив в какую-нибудь папку
+3. Из под пользователя с административными привилегиями, при помощи regasm зарегистрировать 
+сборку SshDataProcessorCom.dll.
+
+regasm /codebase ПутьКДлл\SshDataProcessorCom.dll
+
+4. При необходимости, настроить COM+ приложения для типов:
+
+SshDataProcessor.ScpCom
+SshDataProcessor.SshClientCom
+SshDataProcessor.SshConnectionCom
+SshDataProcessor.SshDataProcessorCom
+SshDataProcessor.StreamCom
