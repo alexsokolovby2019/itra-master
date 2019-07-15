@@ -327,6 +327,7 @@
 		<Metadata name="Catalog.СетевыеХостыАИТП.Form.ФормаЭлемента" id="c3edf718-b939-48af-afc6-4016e0c65338" configVersion="7a9cc4db8fbb92458e8dd56e923b38e400000000"/>
 		<Metadata name="Catalog.СетевыеХостыАИТП.Form.ФормаЭлемента.Form" id="c3edf718-b939-48af-afc6-4016e0c65338.0" configVersion="5dcf9abd2602094fb6cc7b4c8f50919e00000000"/>
 		<Metadata name="Catalog.СетевыеХостыАИТП.Help" id="8621e56e-f876-4e9b-b8cc-beb21eb2308a.1" configVersion="db5f279332a0be469b02ec35b0b1578700000000"/>
+		<Metadata name="Catalog.Справочник1" id="e2a0b4ad-b38a-4305-8455-dfe75a77301e" configVersion="c880d2e7329f104abff1c46309a9bdf200000000"/>
 		<Metadata name="Catalog.УзлыОбменаДаннымиАИТП" id="6f9cc321-03c7-4075-a744-a22ea2a53979" configVersion="965d2eb959989b4e8fe3d0f8400be4c600000000"/>
 		<Metadata name="Catalog.УзлыОбменаДаннымиАИТП.Form.ФормаЭлемента" id="0233b292-81ca-48c8-a547-dcc02711d264" configVersion="b2240852cd4f1748a0784224f4ec79f900000000"/>
 		<Metadata name="Catalog.УзлыОбменаДаннымиАИТП.Form.ФормаЭлемента.Form" id="0233b292-81ca-48c8-a547-dcc02711d264.0" configVersion="0c5dd43aec1fb4469533f3ff7b3d6b1f00000000"/>
@@ -504,7 +505,7 @@
 		<Metadata name="CommonTemplate.ТекстовоеОповещениеПоУмолчаниюАИТП.Template" id="b513ffd6-5596-46ef-813e-9deaf807ce6e.0" configVersion="046c7f29f0afed4b8eee2cf3637f5b4300000000"/>
 		<Metadata name="CommonTemplate.ШаблонОтчетаТестДоступностиСервисаOneScriptАИТП" id="4b6152a0-1f59-469f-8019-c67e02832bcb" configVersion="2b828ffd06814243b8d1e13db172d62800000000"/>
 		<Metadata name="CommonTemplate.ШаблонОтчетаТестДоступностиСервисаOneScriptАИТП.Template" id="4b6152a0-1f59-469f-8019-c67e02832bcb.0" configVersion="6419162449ba94409960a8fb7befbd7e00000000"/>
-		<Metadata name="Configuration.АвтоматизацияИТПроцессов" id="21dbfe5c-3137-4c01-9ca7-f7c176f869cb" configVersion="e2d8dc4a3239c7419ce2b5e6d6723fa500000000"/>
+		<Metadata name="Configuration.АвтоматизацияИТПроцессов" id="21dbfe5c-3137-4c01-9ca7-f7c176f869cb" configVersion="7f9057cbddfbb048886a9cffdcce769a00000000"/>
 		<Metadata name="Configuration.АвтоматизацияИТПроцессов.ClientApplicationInterface" id="490f27e0-4210-4fbf-97bb-25c9a522062a.b" configVersion="06dfc5cd59268e40bba5bd2adf89fd4b00000000"/>
 		<Metadata name="Configuration.АвтоматизацияИТПроцессов.CommandInterface" id="490f27e0-4210-4fbf-97bb-25c9a522062a.a" configVersion="8ce173bef8887143a30ac8577819b09400000000"/>
 		<Metadata name="Configuration.АвтоматизацияИТПроцессов.HomePageWorkArea" id="490f27e0-4210-4fbf-97bb-25c9a522062a.8" configVersion="ff0ccd306f742f43948bd4318f74bdec00000000"/>

@@ -335,6 +335,7 @@
 			<Catalog>СетевыеХостыАИТП</Catalog>
 			<Catalog>УзлыОбменаДаннымиАИТП</Catalog>
 			<Catalog>УчетныеДанныеАИТП</Catalog>
+			<Catalog>Справочник1</Catalog>
 			<Document>ВыполнитьДействияПослеОбновленияАИТП</Document>
 			<Document>РегистрацияПроцессаДляВыполненияАИТП</Document>
 			<Document>ОшибкиВыполненияАИТП</Document>
